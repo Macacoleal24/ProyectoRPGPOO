@@ -8,3 +8,6 @@ Ejectuta el siguiente comando en la terminal ubicada en la carpeta del proyecto 
 
 ## Autor
 Lael Morales Ponce 
+
+## Versión
+En desarrollo
