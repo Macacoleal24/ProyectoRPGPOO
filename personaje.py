@@ -22,4 +22,4 @@ class Personaje:
         print(f"{self.nombre} recupera {cantidad} de vida. Vida: {self.salud}")
 
     def esta_vivo(self):
-        return self.vida > 0
+        return self.salud > 0

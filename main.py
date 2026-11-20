@@ -1,14 +1,16 @@
 from arma import Arma
 from objeto import Objeto
 from personaje import Personaje
+from combate import Combate
 
 espada = Arma("Espada de hierro", 12)
+navaja = Arma("Navaja", 6)
+
 heroe = Personaje("Link", 100, espada)
+heroe.inventario.agregar(Objeto("Poción pequeña", 20))
+heroe.inventario.agregar(Objeto("Poción mediana", 40))
 
-heroe.inventario.agregar(Objeto("Poscion pequeña", 20))
-heroe.inventario.listar()
-heroe.atacar()
+goblin = Personaje('Goblin', 50, navaja)
 
-arco = Arma("Arco de madera", 8)
-heroe.arma = arco
-heroe.atacar()
+combate = Combate(heroe, goblin)
+combate.iniciar()
